@@ -43,6 +43,7 @@ public class MyBeanPostProcessor implements BeanPostProcessor{
                     return method.invoke(bean, args);
                 }
             });
+            System.out.println("------");
             return proxyInstance;
         }
         return bean;
